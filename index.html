@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="StyleStudio: Text-Driven Style Transfer with Selective Control of Style Elements">
+  <meta name="keywords" content="Create images in any style!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StyleStudio: Text-Driven Style Transfer with Selective Control of Style Elements</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">StyleStudio: Text-Driven Style Transfer with Selective Control of Style Elements</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a>Mingkun Lei</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a>Xue Song</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a>Beier Zhu</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a >Hao Wang</a><sup>4</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://icoz69.github.io/">Chi Zhang</a><sup>1✉</sup>,</span>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Westlake University,</span>&nbsp;
+              <span class="author-block"><sup>2</sup>FuDan University,</span>&nbsp;
+              <span class="author-block"><sup>3</sup>Nanyang Technological University</span>&nbsp;
+              <br>
+              <span class="author-block"><sup>4</sup>The Hong Kong University of Science and Technology (Guangzhou)</span>&nbsp;
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://github.com/MingKunLei/StyleStudio"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"> 
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper(Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/MingKunLei/StyleStudio" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code(Coming Soon)</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="assets/teaser.jpg" alt=""/>
+
+        <h2 class="content has-text-centered">
+            Results of our text-driven style transfer model. Given a style reference image, our method effectively reduces style overfitting, generating images that faithfully align with the text prompt while maintaining consistent layout structure across varying styles.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+                Text-driven style transfer aims to merge the style of a reference image with content described by a text prompt.  Recent advancements in text-to-image models have improved the nuance of style transformations, yet significant challenges remain, particularly with overfitting to reference styles, limiting stylistic control, and misaligning with textual content. In this paper, we propose three complementary strategies to address these issues. First, we introduce a cross-modal Adaptive Instance Normalization (AdaIN) mechanism for better integration of style and text features, enhancing alignment. Second, we develop a Style-based Classifier-Free Guidance (SCFG) approach that enables selective control over stylistic elements, reducing irrelevant influences. Finally, we incorporate a teacher model during early generation stages to stabilize spatial layouts and mitigate artifacts. Our extensive evaluations demonstrate significant improvements in style transfer quality and alignment with textual prompts.  Furthermore, our approach can be integrated into existing style transfer frameworks without fine-tuning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+
+  <!-- Paper poster -->
+  <section class="section hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-">
+            <h2 class="title is-2">Method</h2>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <img src="assets/crossModalAdaIN.jpg" alt="" width="700" />
+              </td>
+            </div>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <p>
+                  <b>Cross-Modal AdaIN</b>: We propose a novel method for text-driven style transfer
+                  that better integrates both text and image conditioning. Our
+                  approach aims to achieve a balanced fusion of these two
+                  conditioning inputs, ensuring that they complement each
+                  other effectively.
+                </p>
+                <p>
+                  Building on AdaIN, we develop a cross-modal AdaIN mechanism that integrates text and style conditioning in a way that respects their distinct roles.
+                  We apply AdaIN between two feature maps, where the feature maps queried by text conditions are normalized by style feature maps.
+                </p>
+              </td>
+            </div>
+            <p><br></p>
+            <div class="columns is-centered has-text-justified">
+            <td colspan="3">
+                <img src="assets/teacherModel.jpg" alt="" width="700" />
+            </td>
+            </div>
+            <div class="content has-text-justified">
+            <td colspan="3">
+                <p>
+                    <b>Teacher Model</b>: we propose a method that stabilizes the layout by selectively replacing certain Self-Attention Attn-Maps in the stylized image with those from the original diffusion model.
+                    During the denoising generation process, the Teacher Model (e.g., SDXL) ensures layout stability, guiding the style transfer model to preserve the structure while applying the desired stylistic transformation.
+                </p>
+            </td>
+            </div>
+            <p><br></p>
+
+            <div class="columns is-centered has-text-justified">
+            <td colspan="3">
+                <img src="assets/SCFG.jpg" alt="" width="300" />
+            </td>
+            </div>
+            <div class="content has-text-justified">
+            <td colspan="3">
+                <p>
+                    <b>Style-Based CFG</b>:  we utilize a layout-controlled generation model, such as ControlNet, which allows us to create an image that preserves the structural features of the reference image but omits the target style.
+                    This approach mitigates the risk of overfitting to irrelevant style components.
+                </p>
+            </td>
+            </div>
+          </div>
+  </section>
+  <!--End paper poster -->
+
+
+  <!-- Video grid single ref -->
+  <section class="section hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width">
+            <h2 class="title is-2">Results</h2>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <p>
+                  CSGO employs a widely used adapter-based model structure and is the first method trained on a meticulously curated dataset specifically designed for style transfer. 
+                  In the experimental section, we selected it as the baseline and implemented specific modifications based on it.
+                </p>
+              </td>
+            </div>
+            <h3 class="title is-3">Comparisons with State-of-the-Arts</h3>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <img src="assets/quality.jpg" alt="" width="2160" />
+                <p>
+                  <b>Qualitatively</b>: Given a reference image and a text prompt, <b><i>StyleStudio</i></b> effectively preserves image style while accurately adhering to text prompts for generation and ensuring the layout stability.
+                </p>
+              </td>
+            </div>
+
+            <h3 class="title is-3">Style-Based CFG</h3>
+            <div class="columns is-centered has-text-centered">
+              <td colspan="3">
+                <img src="assets/scfg_quality.jpg" alt="" width="512" />
+              </td>
+            </div>
+            <div class="content has-text-justified">
+            <td colspan="3">
+              <p>
+                By applying a negative style image, we achieved more effective control, successfully removing these unwanted elements. In the baseline images, unintended style elements such as snow and golden leaves are present, which do not align with the intended style. Adding
+                a negative text prompt allowed for some control over these elements; however, unintended style elements like snow were not effectively mitigated. 
+              </p>
+            </td>
+            </div>
+
+            <h3 class="title is-3">More comparisons with State-of-the-Arts</h3>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <img src="assets/quality_2.jpg" alt="" width="2160" />
+                <p>
+                  <b>Qualitatively</b>: Given a reference image and a text prompt, <b><i>StyleStudio</i></b> effectively preserves image style while accurately adhering to text prompts for generation and ensuring the layout stability.
+                </p>
+              </td>
+            </div>
+
+            <h3 class="title is-3">Cross-Modal AdaIN integration with InstantStyle</h3>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <img src="assets/instantstyle_crossmodaladain.jpg" alt="" width="2160" />
+                <p>
+                  Qualitative results of using Cross-Modal AdaIN in InstantStyle. The results demonstrate that Cross-Modal AdaIN effectively prevents style overfitting. The final generated results consistently align with the textual descriptions.
+                </p>
+              </td>
+            </div>
+
+            <h3 class="title is-3">Teacher model integration with StyleCrafter</h3>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <img src="assets/stylecrafter_integration.jpg" alt="" width="2160" />
+                <p>
+                  Impact of Teacher Model on StyleCrafter Image Generation. The term "timestep" refers to the number of denoising steps during which the Teacher Model is involved.
+                  In addition to ensuring layout stability, the Teacher Model also effectively reduces the occurrence of content leakage when applied to StyleCrafte.
+                </p>
+              </td>
+            </div>
+
+          </div>
+        </div>
+        <p><br></p>
+      </div>
+    </div>
+  </section>
+  <!-- End video grid single ref -->
+
+  <!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{tokenflow2023,
+        title = {TokenFlow: Consistent Diffusion Features for Consistent Video Editing},
+        author = {Geyer, Michal and Bar-Tal, Omer and Bagon, Shai and Dekel, Tali},
+        journal={arXiv preprint arxiv:2307.10373},
+        year={2023}
+        }</code></pre>
+    </div>
+  </section> -->
+  <!--End BibTex citation -->
+
+  <footer class="footer">
+    <div class="container">
+      <!-- <div class="content has-text-centered">
+        <a class="icon-link"
+           href="./static/videos/nerfies_paper.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div> -->
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                                                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              Website source code based on the <a
+                href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
